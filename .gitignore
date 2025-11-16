@@ -3,3 +3,8 @@ airflow/logs/
 
 dbt/target/
 dbt/logs/
+*/__pycache__/
+*.pyc
+.DS_Store
+.vscode/
+
