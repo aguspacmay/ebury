@@ -1,0 +1,27 @@
+name: 'csv_data'
+version: '1.0.0'
+profile: 'csv_data'
+
+model-paths: ["models"]
+seed-paths: ["seeds"]
+test-paths: ["tests"]
+macro-paths: ["macros"]
+
+target-path: "target"
+clean-targets:
+  - "target"
+  - "dbt_packages"
+
+
+    
+vars:
+  column_spec: {
+        'transaction_id': 'integer',
+        'customer_id': 'integer',
+        'transaction_date': 'date',
+        'product_id': 'integer',
+        'product_name': 'string',
+        'quantity': 'integer',
+        'price': 'decimal', 
+        'tax': 'decimal'
+    }

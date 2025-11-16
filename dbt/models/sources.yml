@@ -1,0 +1,12 @@
+version: 2
+
+sources:
+  - name: ebury_bronze
+    schema: ebury_bronze
+    tables:
+      - name: customer_transactions
+
+  - name: ebury_silver
+    schema: ebury_silver
+    tables:
+      - name: customer_transactions
